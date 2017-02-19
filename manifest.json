@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Mobile Redirect",
-  "description": "This extension will switch users to the full version of a website when a URL for a mobile based website is accessed",
+  "name": "Book Price Compare",
+  "description": "This extensions will compare prices of books across markets places",
   "version": "0.1",
 
   "browser_action": {
@@ -11,7 +11,7 @@
   },
  "content_scripts": [
   {
-    "matches": ["<all_urls>"],
+    "matches": ["*://amazon.com/*", "*://amazon.co.uk/*"],
     "js": ["content.js"]
   }
  ]
